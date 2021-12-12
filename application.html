@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Application Form </title>
+
+</head>
+
+<body style="background-color: #c9af67;">
+
+    <div style="background-color:transparent;">
+        <p style="text-align:center"><img src="bg.png" ; width="400" height="200" ;>
+        </p>
+    </div>
+    <div style="background-color:transparent;" width=50%; float: centre;>
+
+        <h3 align="center" style="font-size: xx-large;"><u> Application Form </u> </h3>
+        <form align="center" style="font-size: x-large" action="insert.php" method="post">
+            <label for="fname"> <b> First Name: </b> </label> <br/>
+            <input type="text" name="fname" required> <br/>
+            <label for="lname"> <b> Last Name: </b> </label> <br/>
+            <input type="text" name="lname" required> <br/>
+            <label for="email"> <b> Email: </b> </label> <br/>
+            <input type="email" name="email" required> <br/>
+            <label for="address"> <b> Address: </b> </label> <br/>
+            <textarea rows="5" cols="35" name="address" required> </textarea> <br/>
+            <label for="gender"> <b> Gender:</b> </label> <br/>
+            <input type="radio" name="gen" value="male"> Male
+            <input type="radio" name="gen" value="female"> Female
+            <input type="radio" name="gen" value="other">Other <br/>
+            <label for="birthday"> <b>Birthday: </b> </label> <br/>
+            <input type="date" id="birthday" name="birthday"> <br/><br/>
+            <label for="grade"> <b> Current grade: </b> </label> <br/>
+            <select name="grade" id="grade" required>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            </select>
+            <br/>
+            <label for="percentage"> <b> Last Percentage obtained: </b> </label> <br/>
+            <input type="text" name="percentage" required> <br/>
+            <br/>
+            <label for="hobby"> <b> Hobbies(mention a few): </b> </label> <br/>
+            <input type="text" name="hobby" required> <br/>
+            <input type="checkbox" id="valid" name="valid" value="Yes" required> </b>
+            </label>
+            <label for="valid"> The information entered is correct and best to my knowledge</label><br>
+            <br/>
+            <b>
+                <input type="submit" value="Submit">
+            </b>
+        </form>
+
+    </div>
+</body>
+
+</html>
